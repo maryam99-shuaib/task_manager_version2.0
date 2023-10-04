@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>My Task Manager <span>V 2.0</span></h3>
+    <div class="mainContainer">
+        <div onclick="startAdd()" class="addTaskBtn"><img src="./assests/icons/plus.svg"></div>
+        <!-- <div id="position_buttons">
+            <input type="text" id="addTask_box">
+            <button type="button" onclick="addtask()">add task</button>
+        </div> -->
+        <div id="container">
+            <!-- js will insert task here -->
+        </div>
+    </div>
+
+    <div id="BlackCover">
+        <div id="editTask">
+            <h4>Edit Task</h4>
+            <input type="text" id="editTask_box">
+            <button type="button" onclick="SaveEditTask()">Save</button>
+        </div>
+        <div id="closeBorder" onclick="CloseEditTask()">x</div>
+    </div>
+   
+    <div id="BlackCover_ADD">
+        <div id="editTask">
+            <h4>Add Task</h4>
+            <input type="text" id="editTask_box">
+            <button type="button" onclick="SaveEditTask()">Save</button>
+        </div>
+        <div id="closeBorder" onclick="CloseAddTask()">x</div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
