@@ -78,21 +78,21 @@ h3{
        height:100vh;
        background-color: rgba(0, 0, 0, 0.315);
    }
-   #editTask{
+   #AddTask{
        position: absolute;
        top:50%;
        left:50%;
        transform:translate(-50% , -50%) ;
-       background-color: pink;
+       background-color: rgb(0, 196, 196);
        padding:30px;
    
    }
-   #editTask h4{
-       color: blueviolet;
+   #AddTask h4{
+       color: white;
        margin-top: 0px;
        text-align: center;
    }
-   #editTask button{
+   #AddTask button{
        display: block;
        margin-left: 59px;
        margin-top: 15px;
@@ -102,6 +102,30 @@ h3{
        border: none;
        border-radius: 5px;
    }
+   #editTask{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%) ;
+    background-color: rgb(0, 196, 196);
+    padding:30px;
+
+}
+#editTask h4{
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+#editTask button{
+    display: block;
+    margin-left: 59px;
+    margin-top: 15px;
+    background-color: blue;
+    color: aliceblue;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
    #closeBorder{
        position:absolute;
        right:19px;
@@ -113,3 +137,21 @@ h3{
        display:flex;
        gap:10px;
    }
+   .Status_Switch{
+        position:relative;
+        cursor: pointer;
+   }
+   .Status_Switch .ToolTip{
+        display:none;
+        position: absolute;
+        top:30px;
+        background-color: azure;
+        width: 200px;
+        padding: 3px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 30px rgba(78, 78, 78, 0.517);
+        /* height: fit-content; */
+   }
+   .Status_Switch:hover .ToolTip{
+        display:block;
+   } 
