@@ -43,7 +43,7 @@ function updateUI(){
             Status_Switch_Box = ` <div onclick="MarkAsDone(${x})"><img src="./assests/icons/square.svg"></div>`
         }
         var TaskBox = `<div class="task_item">
-        <div>${task[x].name}</div>
+        <div class="${task[x].status === 'completed'? 'strikeThrough': '' }">${task[x].name}</div>
                         <div class ="maryam" >
                             <div onclick="StartEditTask(${x})"><img src="./assests/icons/pen-to-square.svg"></div>
                             <span class="Status_Switch">
@@ -119,6 +119,12 @@ function deleteTask(task_Id){
     }
     function MarkAsDone(task_Id){
         task[task_Id].status = "completed";
+        console.log(task)
+
+        updateUI();
+    }
+    function MarkAsunDone(task_Id){
+        task[task_Id].status = "uncompleted";
         console.log(task)
 
         updateUI();
